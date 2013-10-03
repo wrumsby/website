@@ -2,7 +2,7 @@
   "name": "wrumsby-website",
   "description": "Walter Rumsby's Web Site",
   "version": "1.0.0",
-  "main": "sever.js",
+  "main": "server.js",
   "dependencies": {
     "moment": "2.x",
     "underscore": "1.4.x",
