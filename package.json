@@ -1,0 +1,25 @@
+{
+  "name": "wrumsby-website",
+  "description": "Walter Rumsby's Web Site",
+  "version": "1.0.0",
+  "main": "sever.js",
+  "dependencies": {
+    "moment": "2.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "blog",
+    "website",
+    "personal"
+  ],
+  "author": "Walter Rumsby",
+  "license": "MIT"
+}
