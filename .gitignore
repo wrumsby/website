@@ -15,4 +15,5 @@ node_modules
 blog
 
 npm-debug.log
+azure.err
 .DS_Store
