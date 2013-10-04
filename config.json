@@ -23,5 +23,6 @@
     "perPage": 3
   },
   "filenameTemplate": "/blog/posts/:year/:month/:day/:title/index.html",
-  "output": "./blog"
+  "output": "./blog",
+  "port": 1337
 }
