@@ -432,3 +432,7 @@ code.lang-markdown .bullet {
   }
 }
 
+.video-embed {
+  display: block;
+}
+
