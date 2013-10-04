@@ -6,9 +6,7 @@ var wintersmith = require('wintersmith');
 // {contents: '/some/contents', locals: {powerLevel: 10}}, ..}
 var env = wintersmith('./config.json');
 
-env.setConfig({
-	port: process.env.port || 1337
-});
+env.config.port = process.env.port || env.config.port;
 
 // build site
 env.build(function(error) {
