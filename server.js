@@ -8,18 +8,30 @@ var env = wintersmith('./config.json');
 
 // build site
 env.build(function(error) {
-  if (error) throw error;
-  console.log('Done!');
+	if (error) {
+		console.log(error);
+		throw error;
+	}
+
+	console.log('Done!');
 });
 
 // preview
 env.preview(function(error, server) {
-  if (error) throw error;
-  console.log('Server running!');
+	if (error) {
+		console.log(error);
+		throw error;
+	}
+
+	console.log('Server running!');
 });
 
 // do something with the content tree
 env.load(function(error, result) {
-  if (error) throw error;
-  console.log('Contents loaded!');
-});
+	if (error) {
+		console.log(error);
+		throw error;
+	}
+
+	console.log('Contents loaded!');
+});	
