@@ -6,12 +6,11 @@ var wintersmith = require('wintersmith');
 // {contents: '/some/contents', locals: {powerLevel: 10}}, ..}
 var env = wintersmith('./config.json');
 
-console.log(process.env.port || 1337);
-
 // build site
 env.build(function(error) {
 	if (error) {
-		console.log(error);
+		console.log('build step error ' + error);
+		console.log(process.env.port || 1337);
 		throw error;
 	}
 
@@ -21,7 +20,8 @@ env.build(function(error) {
 // preview
 env.preview(function(error, server) {
 	if (error) {
-		console.log(error);
+		console.log('preview step error ' + error);
+		console.log(process.env.port || 1337);
 		throw error;
 	}
 
@@ -31,7 +31,8 @@ env.preview(function(error, server) {
 // do something with the content tree
 env.load(function(error, result) {
 	if (error) {
-		console.log(error);
+		console.log('load step error ' + error);
+		console.log(process.env.port || 1337);
 		throw error;
 	}
 
