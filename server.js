@@ -12,7 +12,7 @@ env.config.port = process.env.port || env.config.port;
 env.build(function(error) {
 	if (error) {
 		console.log('build step error ' + error);
-		console.log('port ' + process.env.port || 1337);
+		console.dir(env.config);
 		throw error;
 	}
 
@@ -23,7 +23,7 @@ env.build(function(error) {
 env.preview(function(error, server) {
 	if (error) {
 		console.log('preview step error ' + error);
-		console.log('port ' + process.env.port || 1337);
+		console.dir(env.config);
 		throw error;
 	}
 
@@ -34,7 +34,7 @@ env.preview(function(error, server) {
 env.load(function(error, result) {
 	if (error) {
 		console.log('load step error ' + error);
-		console.log('port ' + process.env.port || 1337);
+		console.dir(env.config);
 		throw error;
 	}
 
