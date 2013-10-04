@@ -4,10 +4,12 @@ var wintersmith = require('wintersmith'),
 	http = require('http'),
 	path = require('path'),
 	fs = require('fs'),
-	extensions = {
-		'.html': 'text/html',
-		'.css': 'text/css'
-	};
+	url = require('url');
+
+var extensions = {
+	'.html': 'text/html',
+	'.css': 'text/css'
+};
 
 // create the sites environment, can also be called with a config object. e.g.
 // {contents: '/some/contents', locals: {powerLevel: 10}}, ..}
