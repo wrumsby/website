@@ -14,7 +14,7 @@ env.setConfig({
 env.build(function(error) {
 	if (error) {
 		console.log('build step error ' + error);
-		console.log(process.env.port || 1337);
+		console.log('port ' + process.env.port || 1337);
 		throw error;
 	}
 
@@ -25,7 +25,7 @@ env.build(function(error) {
 env.preview(function(error, server) {
 	if (error) {
 		console.log('preview step error ' + error);
-		console.log(process.env.port || 1337);
+		console.log('port ' + process.env.port || 1337);
 		throw error;
 	}
 
@@ -36,7 +36,7 @@ env.preview(function(error, server) {
 env.load(function(error, result) {
 	if (error) {
 		console.log('load step error ' + error);
-		console.log(process.env.port || 1337);
+		console.log('port ' + process.env.port || 1337);
 		throw error;
 	}
 
